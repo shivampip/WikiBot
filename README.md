@@ -1,6 +1,17 @@
 # WikiBot
 Demo RASA Bot
 
+### Files detail
+
+| File        | Description  |
+|:----------- |:-------------| 
+| nlu.md      | For intent classification and entity extraction | 
+| stories.md  | For dialog flow management |   
+| domain.yml  | defining everything |
+| actions.py  | All custom actions  |
+
+
+
 ### Training
 
 #### Training NLU
@@ -27,9 +38,3 @@ python -m rasa_core.run -d models/dialogue -u models/current/nlu --endpoints end
 
 
 
-| File        | Description           |
-|:------------- |:-------------| 
-| nlu.md      | For intent classification and entity extraction | 
-| stories.md      | For dialog flow management |   
-| domain.yml | defining everything |
-| actions.py  | All custom actions  |

@@ -62,13 +62,6 @@ python bot.py debug
 
 ### Files detail
 
-#### File exploration sequence
-
-1.  nlu.md
-2.  domain.yml
-3.  stories.md
-4.  actions.py
-5.  nlu_config.yml
 
 #### Bot specific files
 
@@ -93,6 +86,14 @@ python bot.py debug
 | environment.yml | Virtual Env |
 | other files  | Github related files  |
 
+
+#### File exploration sequence
+
+1.  nlu.md
+2.  domain.yml
+3.  stories.md
+4.  actions.py
+5.  nlu_config.yml
 
 
 

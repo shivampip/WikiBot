@@ -14,7 +14,7 @@ Demo RASA Bot
 | nlu_config.yml | Processing Pipeline  |
 
 
-#### General files
+#### General files (Almost same for all projects)
 
 | File        | Description  |
 |:----------- |:-------------| 

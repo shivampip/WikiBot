@@ -1,4 +1,5 @@
 {
+  "lookup": {},
   "max_history": 2,
-  "lookup": {}
+  "priority": 4
 }

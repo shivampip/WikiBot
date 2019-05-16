@@ -13,11 +13,11 @@ entities:
 - server_name
 forms: []
 intents:
-- greet:
+- restart_server:
     use_entities: true
 - wiki:
     use_entities: true
-- restart_server:
+- greet:
     use_entities: true
 slots:
   server_name:

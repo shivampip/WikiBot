@@ -3,12 +3,26 @@ Demo RASA Bot
 
 ### Files detail
 
+#### Bot specific files
+
 | File        | Description  |
 |:----------- |:-------------| 
 | nlu.md      | For intent classification and entity extraction | 
 | stories.md  | For dialog flow management |   
 | domain.yml  | defining everything |
 | actions.py  | All custom actions  |
+| nlu_config.yml | Processing Pipeline  |
+
+
+#### General files
+
+| File        | Description  |
+|:----------- |:-------------| 
+| endpoints.yml | Connecting bot with action server | 
+| as.py  | Shortcut to run action server |   
+| bot.py | Shortcut to train and run bot |
+| models (folder) | auto generated on model training |
+| rasa_core.log | Log file for conversation |
 
 
 

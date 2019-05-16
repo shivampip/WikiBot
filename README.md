@@ -1,8 +1,10 @@
 # WikiBot
 Demo rasa bot with 3 intents and 2 custom actions
-* `greet` hello
-* `wiki` tell me about mumbai
-* `restart_server` restart production server
+* hello (intent: greet)
+* tell me about mumbai (intent: wiki)
+* restart production server (intent: restart_server)
+
+**Python 3.5.6**
 
 ## Getting Started
 

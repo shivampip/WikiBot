@@ -10,11 +10,6 @@ Demo RASA Bot
 git clone https://github.com/shivampip/WikiBot.git
 cd WikiBot
 ```
-* Install dependencies
-```
-pip install -r requirements.txt
-```
-and install other dependencies when required
 
 ### Run
 

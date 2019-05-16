@@ -14,6 +14,21 @@ git clone https://github.com/shivampip/WikiBot.git
 cd WikiBot
 ```
 
+* Creating Virtual Env
+```
+conda env create -f environment.yml
+```
+
+* Activate the Env 'wiki'
+```
+conda activate wiki
+```
+
+* Verify Python version
+```
+python --version
+```
+
 ### Run
 
 * Run Action Server

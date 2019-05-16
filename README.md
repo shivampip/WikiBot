@@ -1,4 +1,4 @@
-# WikiBot
+#### WikiBot
 Demo RASA Bot
 
 ### Files detail
@@ -22,7 +22,7 @@ Demo RASA Bot
 | as.py  | Shortcut to run action server |   
 | bot.py | Shortcut to train and run bot |
 | models (folder) | auto generated on model training |
-| rasa_core.log | Log file for conversation |
+| rasa_core.log | auto generated log file for rasa_core |
 
 
 

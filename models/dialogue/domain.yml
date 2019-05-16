@@ -1,0 +1,39 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_searching
+- action_wiki
+- action_server_restart
+config:
+  store_entities_as_slots: true
+entities:
+- word
+- server_name
+forms: []
+intents:
+- greet:
+    use_entities: true
+- wiki:
+    use_entities: true
+- restart_server:
+    use_entities: true
+slots:
+  server_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  word:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_greet:
+  - text: Hello
+  - text: Hiiiiii
+  - text: Hello, I'm bot
+  - text: hello, ask me anything
+  utter_searching:
+  - text: Searching, please wait....
+  - text: Please wait, searching....
+  - text: Crowling web for {word}

@@ -1,0 +1,37 @@
+intents:
+  - greet
+  - wiki
+  - restart_server
+
+
+actions:
+  - utter_greet
+  - utter_searching
+
+  - action_wiki
+  - action_server_restart
+
+
+entities:
+ - word
+ - server_name
+
+
+slots:
+  word:
+    type: text
+  server_name:
+    type: text
+
+
+templates:
+  utter_greet:
+  - text: "Hello"
+  - text: "Hiiiiii"
+  - text: "Hello, I'm bot"
+  - text: "hello, ask me anything"
+
+  utter_searching:
+  - text: "Searching, please wait...."
+  - text: "Please wait, searching...."
+  - text: "Crowling web for {word}"

@@ -1,0 +1,225 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello bot"
+      },
+      {
+        "intent": "greet",
+        "text": "hellooo"
+      },
+      {
+        "intent": "greet",
+        "text": "hiiiii"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "india",
+            "entity": "word"
+          }
+        ],
+        "text": "wiki india"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 5,
+            "end": 18,
+            "value": "narendra modi",
+            "entity": "word"
+          }
+        ],
+        "text": "wiki narendra modi"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "google",
+            "entity": "word"
+          }
+        ],
+        "text": "tell me about google"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "mumbai",
+            "entity": "word"
+          }
+        ],
+        "text": "tell me about mumbai"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 26,
+            "end": 40,
+            "value": "samsung mobile",
+            "entity": "word"
+          }
+        ],
+        "text": "give me information about samsung mobile"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "iphone x",
+            "entity": "word"
+          }
+        ],
+        "text": "i need information about iphone x"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 22,
+            "end": 37,
+            "value": "amitabh bacchan",
+            "entity": "word"
+          }
+        ],
+        "text": "can you tell me about amitabh bacchan"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "apple",
+            "entity": "word"
+          }
+        ],
+        "text": "search apple"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "nepal",
+            "entity": "word"
+          }
+        ],
+        "text": "search nepal"
+      },
+      {
+        "intent": "wiki",
+        "entities": [
+          {
+            "start": 7,
+            "end": 21,
+            "value": "microprocessor",
+            "entity": "word"
+          }
+        ],
+        "text": "search microprocessor"
+      },
+      {
+        "intent": "restart_server",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "test",
+            "entity": "server_name"
+          }
+        ],
+        "text": "restart test server"
+      },
+      {
+        "intent": "restart_server",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "production",
+            "entity": "server_name"
+          }
+        ],
+        "text": "restart production server"
+      },
+      {
+        "intent": "restart_server",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "test",
+            "entity": "server_name"
+          }
+        ],
+        "text": "can you restart test server"
+      },
+      {
+        "intent": "restart_server",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "production",
+            "entity": "server_name"
+          }
+        ],
+        "text": "can you plase restart production server"
+      },
+      {
+        "intent": "restart_server",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "action",
+            "entity": "server_name"
+          }
+        ],
+        "text": "just restart action server"
+      },
+      {
+        "intent": "restart_server",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chatbot",
+            "entity": "server_naem"
+          }
+        ],
+        "text": "restart chatbot server"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

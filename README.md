@@ -88,6 +88,7 @@ python bot.py debug
 | bot.py | Shortcut to train and run bot |
 | models (folder) | auto generated on model training |
 | rasa_core.log | auto generated log file for rasa_core |
+| environment.yml | Virtual Env |
 | other files  | Github related files  |
 
 

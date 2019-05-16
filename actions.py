@@ -10,7 +10,9 @@ class ActionWiki(Action):
 
     def run(self, dispatcher, tracker, domain):
         word= tracker.get_slot("word")
-        dispatcher.utter_message("Word is {}".format(word)) 
+        print("###Word is {}".format(word)) 
+        summary= wikipedia.summary(word) 
+        dispatcher.utter_message(summary)
         return []
 
 

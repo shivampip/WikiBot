@@ -26,6 +26,6 @@
 - can you restart [test](server_name) server
 - can you plase restart [production](server_name) server
 - just restart [action](server_name) server
-- restart [chatbot](server_naem) server
+- restart [chatbot](server_name) server
 
 

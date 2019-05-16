@@ -32,6 +32,14 @@ python bot.py
 
 ### Files detail
 
+### File exploration sequence
+
+1.  nlu.md
+2.  domain.yml
+3.  stories.md
+4.  actions.py
+5.  nlu_config.yml
+
 #### Bot specific files
 
 | File        | Description  |
@@ -55,38 +63,7 @@ python bot.py
 | other files  | Github related files  |
 
 
-### File exploration sequence
 
-1. nlu.md
-2. domain.yml
-3. stories.md
-4. actions.py
-5. nlu_config.yml
-
-
-### Training
-
-#### Training NLU
-```
-python -m rasa_nlu.train -c nlu_config.yml --data nlu.md -o models --fixed_model_name nlu --project current --verbose
-```
-
-#### Training Core
-```
-python -m rasa_core.train -d domain.yml -s stories.md -o models/dialogue
-```
-
-### Running
-
-#### Running Action Server
-```
-python -m rasa_core_sdk.endpoint --actions actions
-```
-
-#### Running Bot
-```
-python -m rasa_core.run -d models/dialogue -u models/current/nlu --endpoints endpoints.yml
-```
 
 
 

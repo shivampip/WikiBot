@@ -34,7 +34,7 @@ python bot.py train
 python bot.py run
 ```
 
-* Debug (see internal working of NLU)
+* Debug (to see internal working of NLU)
 ```
 python bot.py debug
 ```

@@ -2,8 +2,8 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "word",
-        "server_name"
+        "server_name",
+        "word"
       ]
     },
     "action_server_restart": {
@@ -30,7 +30,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190516-115550",
+  "trained_at": "20190516-154336",
   "rasa_core": "0.13.2",
   "tensorflow": "1.13.1",
   "sklearn": "0.20.2"

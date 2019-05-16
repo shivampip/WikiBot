@@ -3,6 +3,7 @@
 actions:
 - utter_greet
 - utter_searching
+- utter_provide_server
 - action_wiki
 - action_server_restart
 config:
@@ -26,7 +27,7 @@ slots:
   word:
     auto_fill: true
     initial_value: null
-    type: rasa_core.slots.TextSlot
+    type: rasa_core.slots.UnfeaturizedSlot
 templates:
   utter_greet:
   - text: Hello

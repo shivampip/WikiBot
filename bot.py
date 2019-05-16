@@ -1,5 +1,6 @@
+import sys, getopt
 import os
-import jsondiff
+import json
 from rasa_nlu.model import Interpreter
 
 class Bot:
@@ -27,18 +28,54 @@ class TestNlu:
         return self.interpreter.parse(msg)
 
 
-bot= Bot()
-bot.trainNlu()
-#bot.trainCore()
-bot.runBoth()
-exit()
 
 
-mb= TestNlu()
-mb.initNlu()
-while(True):
-    msg= input("You:- ")
-    out= mb.runNlu(msg)
-    out= json.dumps(out, indent=4)
-    print("\n\n\n\nBot:- ",out)
+
+
+def nice_print(msg):
+    print("#"*40)
+    print("### {}".format(msg))
+    print("#"*40)
+
+
+if __name__=='__main__':
+    argv= sys.argv
+    debug= False  
+    train= False 
+    run= False 
+
+    if(len(argv)<=1):
+        train= True 
+        run= True 
+    else:
+        for arg in argv[1:]:
+            if(arg=='debug'):
+                debug= True     
+                nice_print("DEGUGGING IS ON") 
+            elif(arg=='train'):
+                train= True  
+            elif(arg=='run'):
+                run= True 
+
+
+    if(debug):
+        mb= TestNlu()
+        while(True):
+            print('-'*50)
+            msg= input("You:- ")
+            out= mb.runNlu(msg)
+            out= json.dumps(out, indent=4)
+            print("\nBot:- ",out)
+        exit()
+
+    bot= Bot()
+    if(train):
+        bot.trainNlu()
+        nice_print("NLU Trained successfully")
+        bot.trainCore()
+        nice_print("Core Trained successfully")
+    if(run):
+        bot.runBoth()
+
+    
 

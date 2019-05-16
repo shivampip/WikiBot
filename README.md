@@ -16,18 +16,33 @@ pip install -r requirements.txt
 ```
 and install other dependencies when required
 
+### Run
+
 * Run Action Server
 ```
 python as.py
 ```
 
-* Open saperate terminal/cmd and Run Bot
+* Open saperate terminal/cmd 
+* Train and Run
 ```
 python bot.py
 ```
-* whenever we run `bot.py`, it trains nlu and core and then run.
-* Training process can be disabled by commenting in `bot.py` file (bottom)
 
+* Train only
+```
+python bot.py train
+```
+
+* Run only
+```
+python bot.py run
+```
+
+* Debug (see internal working of NLU)
+```
+python bot.py debug
+```
 
 
 ### Files detail

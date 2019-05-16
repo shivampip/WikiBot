@@ -7,8 +7,13 @@
 - hiiiii
 
 
-## intent:wiki
-- wiki [india](word)
+<!-- This is comment -->
+
+
+<!-- Variable is called slot here -->
+<!-- 'wiki' intent -->
+## intent:wiki         
+- wiki [india](word)   <!-- Slot name: 'word' & Slot value: 'india' -->
 - wiki [narendra modi](word)
 - tell me about [google](word)
 - tell me about [mumbai](word)
@@ -18,6 +23,11 @@
 - search [apple](word)
 - search [nepal](word)
 - search [microprocessor](word)
+
+<!-- What it will learn with wiki intent is something like this -->
+<!-- wiki aynthing -->
+<!-- tell me about anything -->
+<!-- ..................  -->
 
 
 ## intent:restart_server

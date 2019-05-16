@@ -1,29 +1,41 @@
+
+# This is a comment
+
+
+# This is list of intents, bot can recognize
 intents:
   - greet
   - wiki
   - restart_server
 
 
+# These are actions, bot can respond with
 actions:
+  # Fixed actions
   - utter_greet
   - utter_searching
+  - utter_provide_server
 
+  # Custom actions (defined in actions.py)
   - action_wiki
   - action_server_restart
 
 
+# These are the slots, bot will extract from user input
 entities:
  - word
  - server_name
 
 
+# Slot type
 slots:
   word:
-    type: text
-  server_name:
-    type: text
+    type: unfeaturized    # Slot value will not affect dialog flow
+  server_name: 
+    type: text            # Slot value will affect dialog flow
 
 
+# Bot response templates
 templates:
   utter_greet:
   - text: "Hello"
@@ -34,4 +46,4 @@ templates:
   utter_searching:
   - text: "Searching, please wait...."
   - text: "Please wait, searching...."
-  - text: "Crowling web for {word}"
+  - text: "Crowling web for {word}"      # {word} will be filled with 'word' slot value

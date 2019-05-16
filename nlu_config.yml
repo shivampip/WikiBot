@@ -1,3 +1,6 @@
+# Processing pipeling
+# It defines, how bot will learn from training data
+
 language: "en"
 
 pipeline:

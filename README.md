@@ -53,6 +53,19 @@ python bot.py
 * Training process can be disabled by commenting in `bot.py` file (bottom)
 
 
+### Getting Started
+
+File exploration sequence
+
+1. nlu.md
+2. domain.yml
+3. stories.md
+4. actions.py
+5. nlu_config.yml
+
+
+
+
 
 ### Training
 

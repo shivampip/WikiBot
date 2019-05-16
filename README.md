@@ -26,6 +26,34 @@ Demo RASA Bot
 | other files  | Github related files  |
 
 
+### Installation
+
+* Clone the repo
+```
+git clone https://github.com/shivampip/WikiBot.git
+cd WikiBot
+```
+* Install dependencies
+```
+pip install -r requirements.txt
+```
+and install other dependencies when required
+
+#### Run locally
+* Run Action Server
+```
+python as.py
+```
+
+* Open saperate terminal/cmd and Run Bot
+```
+python bot.py
+```
+* whenever we run `bot.py`, it trains nlu and core and then run.
+* Training process can be disabled by commenting in `bot.py` file (bottom)
+
+
+
 ### Training
 
 #### Training NLU

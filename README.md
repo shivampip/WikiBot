@@ -1,5 +1,8 @@
-#### WikiBot
-Demo RASA Bot
+# WikiBot
+Demo rasa bot with 3 intents and 2 custom actions
+* `greet` hello
+* `wiki` tell me about mumbai
+* `restart_server` restart production server
 
 ## Getting Started
 

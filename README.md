@@ -32,7 +32,7 @@ python bot.py
 
 ### Files detail
 
-### File exploration sequence
+#### File exploration sequence
 
 1.  nlu.md
 2.  domain.yml

@@ -18,6 +18,7 @@ dependencies:
   - wheel=0.31.1=py35_0
   - xz=5.2.4=h14c3975_4
   - zlib=1.2.11=h7b6447c_3
+  - pip
   - pip:
     - absl-py==0.7.1
     - apscheduler==3.6.0

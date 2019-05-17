@@ -6,9 +6,9 @@ dependencies:
   - certifi=2018.8.24=py35_1
   - setuptools=40.2.0=py35_0
   - wheel=0.31.1=py35_0
-  - zlib=1.2.11=h7b6447c_3
   - pip
   - pip:
+    - zlib=1.2.11=h7b6447c_3
     - readline=7.0=h7b6447c_5
     - sqlite=3.28.0=h7b6447c_0
     - tk=8.6.8=hbc83047_0

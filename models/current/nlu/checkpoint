@@ -1,2 +1,0 @@
-model_checkpoint_path: "/home/shiva/p/pro/WikiBot/models/current/nlu/component_5_EmbeddingIntentClassifier.ckpt"
-all_model_checkpoint_paths: "/home/shiva/p/pro/WikiBot/models/current/nlu/component_5_EmbeddingIntentClassifier.ckpt"

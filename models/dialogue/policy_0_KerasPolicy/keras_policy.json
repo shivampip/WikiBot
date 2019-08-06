@@ -1,5 +1,0 @@
-{
-  "epochs": 100,
-  "priority": 1,
-  "model": "keras_model.h5"
-}

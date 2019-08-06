@@ -13,11 +13,16 @@
   - utter_searching       <!-- Call utter searching (domaing.yml > template ) -->
   - action_wiki           <!-- Now call custom action 'action_wiki' -->
 
+## Remider
+  - action_alarm
+
+  
 
 ## Restart Server
 * restart_server{"server_name": "something"}
   - slot{"server_name": "something"}
   - action_server_restart
+
 
 
 

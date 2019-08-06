@@ -1,7 +1,9 @@
 from rasa_core_sdk import Action
-from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
+from rasa_core_sdk.events import SlotSet, UserUtteranceReverted, ReminderScheduled
 
 import wikipedia 
+
+import datetime 
 
 
 # There is a class for each custom action, This is for custom action 'action_wiki'
@@ -23,9 +25,22 @@ class ActionWiki(Action):
         # Sending response back to user
         dispatcher.utter_message(summary)
 
+        trigger_time= datetime.datetime.now() + datetime.timedelta(seconds= 10)
+        
+        dispatcher.utter_message("Alarm Set")
+
+        return [ReminderScheduled("action_alarm", trigger_time, kill_on_user_message= False)]
+
+
+
+class ActionAlarm(Action):
+    def name(self):
+        return "action_alarm"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message("It is the alarm.")
+        dispatcher.utter_message("Ring ring...")
         return []
-
-
 
 
 

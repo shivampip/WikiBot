@@ -19,6 +19,7 @@ actions:
   # Custom actions (defined in actions.py)
   - action_wiki
   - action_server_restart
+  - action_alarm
 
 
 # These are the slots, bot will extract from user input
